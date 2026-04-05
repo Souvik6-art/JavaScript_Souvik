@@ -63,3 +63,7 @@ console.log(gatheredArray);
 
 
 console.log(Array.isArray("Souvik Mondal")); // check if it's an array
+// isArray, fromArray , ofArray important...
+
+
+ // java Script mee object and Events are important 
