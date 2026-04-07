@@ -1,5 +1,5 @@
 //array
-/*
+
 const myArr = [0,1,2,3,4,5]
 console.log("A  "+myArr);
 
@@ -36,7 +36,7 @@ console.log(myn1);
 const myn2 = myArr.splice(0,3) // splice(start,count) count is number of elements to remove
 console.log(myn2);
 console.log(myArr); // original array is modified by splice
-*/
+
 
 const myHeroes = ["Superman", "Batman", "Wonder Woman"];
 const myVillains = ["Joker", "Lex Luthor", "Cheetah"];
