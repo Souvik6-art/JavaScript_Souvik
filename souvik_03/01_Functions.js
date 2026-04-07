@@ -17,7 +17,7 @@ function addTwoNums(num1, num2 ){  //num1 and num2 are parameters..
 //   return result
     return num1+num2
 }
-console.log(" the sum is: " + addTwoNums(55, 45)); // 55 and 45 are arguments
+//console.log(" the sum is: " + addTwoNums(55, 45)); // 55 and 45 are arguments
 
 function isloggedIn(username){
     if(username != undefined){
@@ -26,4 +26,23 @@ function isloggedIn(username){
     else {console.log("Plese enter valid User Name");
     }
 }
- isloggedIn(" Souvik ")
+ //isloggedIn(" Souvik ")
+// ... this is rest operator also spread operator
+ function calculateCartPrice(...num1){ //rest
+return num1
+ }
+ console.log(calculateCartPrice(458,552,998));
+  
+
+ //creating an object and accessing it by the function...
+ const myobject={
+    username: "Souvik mondal",
+    age: 23,
+    location: "Kolkata"
+ }
+ function accessmyobject(anyobject){
+    console.log(`The name is: ${anyobject.username} and the age is ${anyobject.age}`);
+    
+ }
+ 
+  // 5:004
