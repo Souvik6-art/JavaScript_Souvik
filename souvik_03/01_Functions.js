@@ -45,4 +45,19 @@ return num1
     
  }
  
-  // 5:004
+  function allCartPrice(...num1){ 
+    let sum=0
+    for(let i=0; i<num1.length; i++){
+        sum+=num1[i]
+    }           
+    return sum
+  }
+   // console.log(allCartPrice(458,552,998));
+   
+   
+const mynewArray=[100,200,300,400,500]
+function retuernSecondvalue(...referenceArray){  
+    return referenceArray[1]
+}
+console.log(retuernSecondvalue(...mynewArray)); //spread operator
+
