@@ -9,7 +9,7 @@ tinder_User.age= 25;
 tinder_User.location= "Kolkata";
 //console.log(tinder_User);
 
-const regularUser= {
+const regularUser= { //object declaration
     email:"tinderUser.User@gmail.com",
     fullName: {
         userFullname:{
