@@ -25,6 +25,8 @@ two()
 }
 //one()
 
+
+
 if (true){
     const myName1= "Souvik"
     if(myName1 == "Souvik"){
@@ -35,4 +37,19 @@ if (true){
   //  console.log(webname1);//it will not be accessed
 }
 //console.log(myName1);
+  
+
+//**********************************two syntaxes of function****************************** */
+console.log(addone(5)); // we can call the function before declaration
+
+function addone(num){
+  return num+1
+}
+//console.log(addone(5));
+ 
+//console.log(addTwo(5)); // here we can not call it because w hold the function in a variable
+const addTwo = function(num){
+  return num+2
+}
+console.log(addTwo(5));
  
