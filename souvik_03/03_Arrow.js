@@ -34,9 +34,17 @@ function Mondal(){
 
     //**************************ARROW FUNCTION********************************* */
 
-
-    const mondalArrow = () => {
+    console.log("Arrow Function Example");
+    const mondalArrow = () => {  // We can Also hold an Arrow Function in a Variable
       let UserName ="Pintu Mondal"
-      console.log(this.UserName);
- }
- mondalArrow();
+      console.log(UserName);
+       }
+mondalArrow(); 
+
+const addTwo = (num1, num2) => num1+ num2
+console.log(addTwo(5, 10)); // it will print 15
+ //{} er modhye likhle return keyword use korte hobe. otherwise it will return undefined.
+ //() er modhye likhle return keyword use korte hobe na. it will return the result of the expression automatically
+// jemon 
+const addTwoArrow = (num1, num2) => { return num1+ num2 }
+console.log(addTwoArrow(5, 10)); // it will also print 15

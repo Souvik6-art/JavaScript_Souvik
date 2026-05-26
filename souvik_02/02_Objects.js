@@ -1,7 +1,8 @@
 // //objects ko declare karneka 2 tareeka h ek literal k tarha aur ek constructor ki tarhaa
 // Singleton .. literals k tarha use karne pe Singleton nhi banta
 //Object.create  //Constructor method,, yaha singleton bante h 
-
+ 
+// *****  obeject ke return korar jonne take () er modhye likhte hobe ba wrap kore likhte hobe
  //SYMBOL
     const sym1 = Symbol("id");
 
