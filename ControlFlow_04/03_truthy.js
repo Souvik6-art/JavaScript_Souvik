@@ -43,5 +43,5 @@ if(Object.keys(emptyObj).length === 0){
    const icePrice = 50;
    icePrice >=30 ?  console.log(`${icePrice} is Expensive `): console.log(`${icePrice} is not expensive`);
    
-   
+
    
