@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SouvikMomdal</title>
+</head>
+<body>
+    <div class="parent">
+     <div class="day">Monday</div>
+     <div class="day"> Tuesday</div>
+     <div class="day">Thursday</div>
+     <div class="day">Friday</div>   
+    </div>
+</body>
+<script>
+   const parent= document.querySelector('.parent')
+    console.log(parent);
+    console.log(parent.children);
+const children1=Array.from(parent.children)
+console.log(children1);
+children1.forEach(function(f){
+f.style.backgroundColor="#551250"
+    
+})
+
+const con = document.querySelector('.day');
+console.log(con.parentElement);
+console.log(con.nextElementSibling);
+
+
+    
+</script>
+</html>
