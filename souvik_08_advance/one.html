@@ -8,14 +8,24 @@
 <body style="background-color: #212121;">
 
 <script>
+       const requestURL ='https://api.github.com/users/hiteshchoudhary';
    const xhr= new  XMLHttpRequest()
-   const requestURL ='https://api.github.com/users/hiteshchoudhary';
 xhr.open('GET',requestURL )
 
 xhr.onreadystatechange = function(){
 console.log(xhr.readyState);
+
+if (xhr.readyState === 4){
+    const data = JSON.parse(this.responseText)
+const fol = data.followers ;
+console.log(fol);
 }
+}
+
 xhr.send();
+
+
+
 </script>
 </body>
 </html> 
