@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FollowerCount</title>
+   
+</head>
+<header> <h1> This button will show the followers of my JavaScript Teacher</h1></header>
+<body style="background-color: #214574; color: azure; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+ <button style="background-color: aquamarine; border-radius: 30%; margin-left: 400px;" id="submit">Press Here </button>
+ <div style="height: 250px; width: 220px; background-color: darkgrey; display: flex; justify-content: center; align-items: center; margin-left: 400px;" id="photo"></div>
+<div style="height: 30px; width: 220px; background-color: rgb(39, 37, 34); color: rgb(143, 143, 29); margin-left: 400px; font-size: 24px; font-weight: bold;   " id="followers"></div>
+
+    <script>
+const requesturl= 'https://api.github.com/users/hiteshchoudhary'
+const Button= document.querySelector("#submit");
+const bucket = document.getElementById("photo");
+const fol1= document.getElementById("followers");
+/*Button.addEventListener("click", function(){  */
+const xhr = new XMLHttpRequest();
+
+xhr.open('GET', requesturl);
+
+
+
+xhr.onreadystatechange = function () {
+
+    
+        const data = JSON.parse(xhr.responseText);
+
+        const fol = data.followers;
+
+        console.log(fol);
+Button.addEventListener("click", function(){
+  bucket.innerHTML = `<img src="${data.avatar_url}"height=100%, width="100%">`;
+fol1.innerHTML= "followers= " + fol ;
+
+      });
+   };  
+
+xhr.send();
+/*  });*/
+
+    </script>
+    
+</body>
+</html>
