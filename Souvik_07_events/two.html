@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Souvik Mondal Events Learning</h1>
+    <button id="stop">stop here</button>
+</body>
+<script>
+    setTimeout(function(){console.log( "This is Souvik");},3000) // it works after the time out
+ // handler is  a function which has no name.
+  //Example----->
+  const sayMYname = function(){
+    console.log("My name is Souvik");    
+  }
+
+const settime  = setTimeout(sayMYname,2000);
+//  to cancel set time out we use clearTimeout()
+clearTimeout(sayMYname);
+
+document.querySelector("#stop").addEventListener("click", function(){
+    clearTimeout(settime );
+    console.log("Stopped saying your name");
+    
+})
+</script>
+</html>
+12.09

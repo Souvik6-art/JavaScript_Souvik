@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html events</title>
+</head>
+<body style="background-color: #414141;"> 
+    <h2>The Images  </h2>
+    <div>
+<ul id="images">
+<li> <img width="200px" id="FinalLogo" src="/CSS_Learing/myPhoto/24053.png" alt=""></li>
+<li><img width="200px" id="myphoto" src="/CSS_Learing/myPhoto/image.png" alt=""></li>
+<li><img width="200px" id="water drop" src="/CSS_Learing/myPhoto/water-wave-with-drops.jpg" alt=""></li>
+<li><img width="200px" id="seawater" src="/CSS_Learing/myPhoto/water img.avif" alt=""></li>
+</ul>
+
+    </div>
+   
+</body>
+<script>
+   /* document.getElementById('FinalLogo').onclick= function(){
+      alert("this is the final logo")}*/
+      document.getElementById('FinalLogo').addEventListener('click',function(){alert("This s the final logo")})
+      document.getElementById('FinalLogo').addEventListener('click',function(e){
+        console.log(e);
+        
+      },true) // true korle baire theke vetor dike print hoi.. false korle vetor theke baire 
+
+
+
+      /// to delete any item ........
+document.querySelector("#images").addEventListener("click", function (e) {
+  if (e.target.tagName === "IMG") {
+    e.target.remove(); 
+  }
+});
+
+
+</script>
+</html>
