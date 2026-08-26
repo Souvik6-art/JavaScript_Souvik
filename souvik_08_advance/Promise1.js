@@ -13,6 +13,8 @@ PromiseOne.then(function(){
     
 })
 
+
+  // 2nd Promise .....
 new Promise (function(resolve, reject){
     setTimeout(function(){
         console.log("Hello EveryOne");
@@ -23,3 +25,15 @@ new Promise (function(resolve, reject){
         
     })
     
+
+
+    // third Promise style...
+   const PromiseThree = new  Promise(function(resolve, reject){
+setTimeout (function(){
+    resolve({UserName:"Souvik", Email:"Souvik@gmail.com", Age:"23"})
+},1000)
+    })
+    PromiseThree.then(function(userDetails){
+console.log(userDetails);
+
+    })
